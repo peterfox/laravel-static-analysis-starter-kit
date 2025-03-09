@@ -11,15 +11,21 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "webmozart/assert": "^1.11"
     },
     "require-dev": {
+        "driftingly/rector-laravel": "^2.0",
         "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^3.0",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-webmozart-assert": "^2.0",
         "phpunit/phpunit": "^11.5.3"
     },
     "autoload": {
@@ -35,6 +41,16 @@
         }
     },
     "scripts": {
+        "ci": [
+            "@fix",
+            "@lint",
+            "@test",
+            "@analysis"
+        ],
+        "analysis": "./vendor/bin/phpstan",
+        "fix": "./vendor/bin/rector",
+        "lint": "./vendor/bin/pint",
+        "test": "@php artisan test",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -66,7 +82,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "stable",
