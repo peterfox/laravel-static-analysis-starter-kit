@@ -19,14 +19,14 @@
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^3.0",
         "laravel/pail": "^1.2.2",
-        "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-deprecation-rules": "^2.0",
         "phpstan/phpstan-webmozart-assert": "^2.0",
-        "phpunit/phpunit": "^11.5.3"
+        "phpunit/phpunit": "^11.5.3",
+        "symplify/easy-coding-standard": "^12.5"
     },
     "autoload": {
         "psr-4": {
@@ -49,7 +49,7 @@
         ],
         "analysis": "./vendor/bin/phpstan",
         "fix": "./vendor/bin/rector",
-        "lint": "./vendor/bin/pint",
+        "lint": "./vendor/bin/ecs --fix",
         "test": "@php artisan test",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

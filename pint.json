@@ -1,7 +1,0 @@
-{
-    "preset": "laravel",
-    "rules": {
-        "@PHP84Migration": true,
-        "@PSR12": true
-    }
-}
