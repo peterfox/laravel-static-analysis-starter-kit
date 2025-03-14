@@ -38,9 +38,10 @@ This will run tests as well between linting and phpstan.
 
 The project includes the following PHPStan extensions:
 
-* [Larastan](https://github.com/larastan/larastan) - Helps analyse for Laravel related issues
-* [PHPStan deprecated warnings](https://github.com/phpstan/phpstan-deprecation-rules) - Finds use of deprecated code
-* [PHPStan webmozart/assert](https://github.com/phpstan/phpstan-webmozart-assert) - Allow extra detections via [webmozart/assert](https://github.com/webmozart/assert)
+* [Larastan](https://github.com/larastan/larastan) - Helps analyse for Laravel related issues.
+* [PHPStan deprecated warnings](https://github.com/phpstan/phpstan-deprecation-rules) - Finds use of deprecated code.
+* [PHPStan webmozart/assert](https://github.com/phpstan/phpstan-webmozart-assert) - Allow extra detections via [webmozart/assert](https://github.com/webmozart/assert).
+* [PHPStan PHPUnit](https://github.com/phpstan/phpstan-phpunit) - Highlights issues with PHPUnit tests.
 
 At current the [`phpstan.neon.dist`](phpstan.neon.dist) config sets level 6 and covers the app and tests folders.
 
