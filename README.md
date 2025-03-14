@@ -1,3 +1,5 @@
+![Packagist Downloads](https://img.shields.io/packagist/dt/peterfox/laravel-static-analysis-starter-kit)
+
 # The Laravel Static Analysis Starter Kit
 
 This starter template is less for making projects and more for educational purposes.
