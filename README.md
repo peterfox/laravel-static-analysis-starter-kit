@@ -42,10 +42,20 @@ The project includes the following PHPStan extensions:
 * [PHPStan deprecated warnings](https://github.com/phpstan/phpstan-deprecation-rules) - Finds use of deprecated code
 * [PHPStan webmozart/assert](https://github.com/phpstan/phpstan-webmozart-assert) - Allow extra detections via [webmozart/assert](https://github.com/webmozart/assert)
 
-At current the `phpstan.neon.dist` config sets level 6 and covers the app and tests folders.
+At current the [`phpstan.neon.dist`](phpstan.neon.dist) config sets level 6 and covers the app and tests folders.
 
 ### EasyCoding Standards
 
+EasyCoding Standards is a wrapper around PHP CS Fixer in the same way Laravel Pint is but it makes the config easier
+to write. Instead of JSON, it's a PHP file that IDEs will be able to auto-complete with.
+
+The config for EasyCoding Standards lives in [`ecs.php`](ecs.php).
+
 ### Rector
+
+Rector is for automatically fixing, upgrading and improving code. This will act in the same way PHP CS Fixer does but
+goes even further but performing a type hint analysis before applying rules.
+
+The config for rector lives in [`rector.php`](rector.php).
 
 
