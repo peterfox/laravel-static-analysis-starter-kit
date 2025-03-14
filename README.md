@@ -42,6 +42,7 @@ The project includes the following PHPStan extensions:
 * [PHPStan deprecated warnings](https://github.com/phpstan/phpstan-deprecation-rules) - Finds use of deprecated code.
 * [PHPStan webmozart/assert](https://github.com/phpstan/phpstan-webmozart-assert) - Allow extra detections via [webmozart/assert](https://github.com/webmozart/assert).
 * [PHPStan PHPUnit](https://github.com/phpstan/phpstan-phpunit) - Highlights issues with PHPUnit tests.
+* [Simplify PHPStan Rule](https://github.com/symplify/phpstan-rules) - Additional Rules around clean architecture.
 
 At current the [`phpstan.neon.dist`](phpstan.neon.dist) config sets level 6 and covers the app and tests folders.
 
